@@ -2,6 +2,7 @@
 title: TreeBASE static
 output: 
   html_document:
+    theme: null
     includes:
       in_header: GA_Script.html
 params:
@@ -20,12 +21,14 @@ focal_info <- params$study_trees[1,] %>% select(study_id, authors,publishyear, p
 * Issue: `r focal_info$issue`
 * Pages: `r focal_info$pages`
 * Keywords: `r focal_info$keywords`
+* DOI: `r focal_info$doi`
 * Abstract: `r focal_info$abstract`
 
 The trees:
 
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
 relevant_table <- params$study_trees %>% select(tree_label, ntax, rootedtree, title, tree_kind, tree_type, tree_quality, phylotree_id)
-relevant_table$URL <- paste0("a href='../trees/tree_",relevant_table$phylotree_id, ".phy")
-print(relevant_table)
+relevant_table$phylotree_id <- paste0("<a href='../trees/tree_",relevant_table$phylotree_id, ".phy'>", "tree_",relevant_table$phylotree_id, ".phy</a>" )
+rownames(relevant_table) <- NULL
+knitr::kable(relevant_table, escape=FALSE)
 ```

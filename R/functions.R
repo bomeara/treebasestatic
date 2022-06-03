@@ -10,6 +10,9 @@ LEFT JOIN study ON phylotree.study_id = study.study_id
 LEFT JOIN citation ON study.citation_id = citation.citation_id
 LEFT JOIN all_authors_by_pub ON study.citation_id = all_authors_by_pub.citation_id
 "))
+for (i in sequence(ncol(treedf))) {
+	treedf[,i] <- as.character(treedf[,i])
+}
 treedf_clean <- data.frame(phylotree_id = treedf$phylotree_id, tree_label = treedf$label, ntax=treedf$ntax, newickstring=treedf$newickstring, published=treedf$published, rootedtree=treedf$rootedtree, title=treedf$title, study_id=treedf$study_id, tree_kind = treedf$description, tree_type=treedf$description..24, tree_quality=treedf$description..27, tb_studyid=treedf$tb_studyid, accessionnumber=treedf$accessionnumber, lastmodifieddate=treedf$lastmodifieddate, name=treedf$name, notes=treedf$notes, releasedate=treedf$releasedate, pmid=treedf$pmid, url=treedf$url, abstract=treedf$abstract, doi=treedf$doi, keywords=treedf$keywords, pages=treedf$pages, publishyear=treedf$publishyear, papertitle=treedf$title..50, issue=treedf$issue, journal=treedf$journal, volume=treedf$volume, isbn=treedf$isbn, booktitle=treedf$booktitle, city=treedf$city, publisher=treedf$publisher, authors=gsub("  ", " ", treedf$authors))
 dbDisconnect(con) 
 return(treedf_clean)
