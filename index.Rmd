@@ -1,0 +1,31 @@
+---
+title: TreeBASE static
+output: 
+  html_document:
+    includes:
+      in_header: GA_Script.html
+params:
+  trees: "nothing"
+---
+
+```{r setup, include=FALSE, message=FALSE, warning=FALSE, cache=TRUE}
+
+```
+
+TreeBASE was a repository of phylogenetic information, specifically user-submitted phylogenetic trees and the data used to generate them. TreeBASE accepts all kinds of phylogenetic data (e.g., trees of species, trees of populations, trees of genes) representing all biotic taxa. Data in TreeBASE are exposed to the public if they are used in a publication that is in press or published in a peer-reviewed scientific journal, book, conference proceedings, or thesis. 
+
+In spring 2022 it was taken offline due to a potential security issue after ~28 years of service. This is a simple page to restore some basic TreeBASE functionality so people can again access trees. It is not taking new trees; for that, go to [Open Tree of Life](https://tree.opentreeoflife.org/). Note that this site was stood up by [Brian O'Meara](https://www.brianomeara.info) and uses postgresql and R to convert the rich relational database behind TreeBASE into web pages and static files.
+
+
+
+
+Start typing above each column to filter for all taxa matching that. It will filter for the taxa and link out to the appropriate study page
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+pretty_tree_output <- function(output_table) {
+	output_table_clean <- output_table %>% select(authors, papertitle, journal, publishyear, doi, study_id, phylotree_id) %>% group_by(authors, papertitle, journal, publishyear, doi, study_id) %>% summarise(ntrees=n())
+	DT::datatable(output_table_clean,rownames=FALSE, filter="top", escape=FALSE)
+}
+
+pretty_tree_output(params$trees)
+```

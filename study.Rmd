@@ -1,0 +1,31 @@
+---
+title: TreeBASE static
+output: 
+  html_document:
+    includes:
+      in_header: GA_Script.html
+params:
+  study_trees: "nothing"
+---
+
+```{r setup, include=FALSE, message=FALSE, warning=FALSE, cache=TRUE}
+focal_info <- params$study_trees[1,] %>% select(study_id, authors,publishyear, papertitle, journal, volume, issue, pages, doi, abstract, keywords)
+```
+
+* Authors: `r focal_info$authors`
+* Year: `r focal_info$publishyear`
+* Title: `r focal_info$papertitle`
+* Journal: `r focal_info$journal`
+* Volume: `r focal_info$volume`
+* Issue: `r focal_info$issue`
+* Pages: `r focal_info$pages`
+* Keywords: `r focal_info$keywords`
+* Abstract: `r focal_info$abstract`
+
+The trees:
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+relevant_table <- params$study_trees %>% select(tree_label, ntax, rootedtree, title, tree_kind, tree_type, tree_quality, phylotree_id)
+relevant_table$URL <- paste0("a href='../trees/tree_",relevant_table$phylotree_id, ".phy")
+print(relevant_table)
+```

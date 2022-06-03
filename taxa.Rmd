@@ -1,0 +1,29 @@
+---
+title: TreeBASE static
+output: 
+  html_document:
+    includes:
+      in_header: GA_Script.html
+params:
+  taxa: "nothing"
+---
+
+```{r setup, include=FALSE, message=FALSE, warning=FALSE, cache=TRUE}
+
+```
+
+
+
+
+### Taxa
+
+Start typing above each column to filter for all taxa matching that. It will filter for the taxa and link out to the appropriate study page
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+pretty_taxa_output <- function(output_table) {
+
+	DT::datatable(output_table,rownames=FALSE, filter="top", escape=FALSE)
+}
+
+pretty_taxa_output(params$taxa)
+```
