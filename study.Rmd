@@ -28,7 +28,7 @@ The trees:
 
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
 relevant_table <- params$study_trees %>% select(tree_label, ntax, rootedtree, title, tree_kind, tree_type, tree_quality, phylotree_id)
-relevant_table$phylotree_id <- paste0("<a href='../trees/tree_",relevant_table$phylotree_id, ".phy'>", "tree_",relevant_table$phylotree_id, ".phy</a>" )
+relevant_table$phylotree_id <- paste0("<a href='../trees/", params$study_trees$publishyear, "/tree_",relevant_table$phylotree_id, ".phy'>", "tree_",relevant_table$phylotree_id, ".phy</a>" )
 rownames(relevant_table) <- NULL
 knitr::kable(relevant_table, escape=FALSE)
 ```

@@ -17,5 +17,6 @@ list(
   tar_render(about_page, "about.Rmd"),
   tar_render(references_page, "references.Rmd"),
   tar_target(each_tree, SaveEachTree(trees_df)),
-  tar_target(each_study, SaveEachStudy(trees_df))
+  tar_target(each_study, SaveEachStudy(trees_df)),
+  tar_target(trees_dump, write.csv(trees_df, file=gzfile("trees.csv.gz")))
 )

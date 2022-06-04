@@ -21,8 +21,8 @@ Start typing above each column to filter for all taxa matching that. It will fil
 
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
 pretty_taxa_output <- function(output_table) {
-
-	DT::datatable(output_table,rownames=FALSE, filter="top", escape=FALSE)
+	output_table$taxa <- paste0("<a href='studies/study_",output_table$study_id, ".html'>", output_table$taxa, "</a>" )
+	DT::datatable(output_table$taxa,rownames=FALSE, filter="top", escape=FALSE)
 }
 
 pretty_taxa_output(params$taxa)

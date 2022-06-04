@@ -20,18 +20,24 @@ return(treedf_clean)
 
 GetTaxa <- function() {
 	taxa <- dbFetch(dbSendQuery(dbConnect(RPostgres::Postgres(), dbname="treebase"), "SELECT * FROM taxonlabel"))
+	for (i in sequence(ncol(taxa))) {
+		taxa[,i] <- as.character(taxa[,i])
+	}	
 	taxa_clean <- data.frame(taxon=taxa$taxonlabel, study_id=taxa$study_id)
 	return(taxa_clean)
 }
 
 SaveEachTree <- function(trees) {
 	for(i in sequence(nrow(trees))) {
-		cat(trees$newickstring[i], file=paste0("trees/tree_", trees$phylotree_id[i], ".phy"))
+		try(dir.create(paste0("trees/", trees$publishyear[i]), recursive=TRUE))
+		cat(trees$newickstring[i], file=paste0("trees/", trees$publishyear[i], "/tree_", trees$phylotree_id[i], ".phy"))
 	}	
 }
 
 SaveEachStudy <- function(trees) {
 	unique_studies <- unique(trees$study_id)
+	try(dir.create("studies"))
+
 	for(i in sequence(length(unique_studies))) {
 		rmarkdown::render(input="study.Rmd", output_file=paste0("studies/study_", unique_studies[i] , ".html"), 
 		params=list(study_trees=trees[which(trees$study_id==unique_studies[i]),]))
