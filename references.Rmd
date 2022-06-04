@@ -7,27 +7,32 @@ output:
 ---
 
 
-How to cite
+### How to cite
+
 The following publications describe TreeBASE version 2 (the current version), its web services, and the data format it uses. Reference these publications to cite TreeBASE.
 
-Piel, W. H., Chan, L., Dominus, M. J., Ruan, J., Vos, R. A., and V. Tannen 2009. TreeBASE v. 2: A Database of Phylogenetic Knowledge. In: e-BioSphere 2009
-Vos, R. A., Balhoff, J. P., Caravas, J. A., Holder, M. T., Lapp, H. Maddison, W. P., Midford, P. E., Priyam, A., Sukumaran, J., Xia, X. and A. Stoltzfus 2012. NeXML: rich, extensible, and verifiable representation of comparative data and metadata. Systematic Biology 61(4): 675-689.
-Further reading about previous versions of TreeBASE
+* Piel, W. H., Chan, L., Dominus, M. J., Ruan, J., Vos, R. A., and V. Tannen 2009. TreeBASE v. 2: A Database of Phylogenetic Knowledge. In: e-BioSphere 2009
+* Vos, R. A., Balhoff, J. P., Caravas, J. A., Holder, M. T., Lapp, H. Maddison, W. P., Midford, P. E., Priyam, A., Sukumaran, J., Xia, X. and A. Stoltzfus 2012. NeXML: rich, extensible, and verifiable representation of comparative data and metadata. Systematic Biology 61(4): 675-689.
+
+### Further reading about previous versions of TreeBASE
+
 Cite these papers if you are writing about the TreeBASE initiative and previous incarnations.
 
-Morell, V. 1996. TreeBASE: the roots of phylogeny. Science 273: 569.
-Piel, W. H., M. J. Donoghue, and M. J. Sanderson. 2002. "TreeBASE: a database of phylogenetic knowledge." Pp. 41-47. In: Shimura, J., K. L. Wilson, and D. Gordon, eds. To the interoperable "Catalog of Life" with partners Species 2000 Asia Oceanea. Research Report from the National Institute for Environmental Studies No. 171, Tsukuba, Japan.
-Sanderson, M. J., M. J. Donoghue, W. Piel, and T. Eriksson. 1994. TreeBASE: a prototype database of phylogenetic analyses and an interactive tool for browsing the phylogeny of life. American Journal of Botany, 81(6): 183.
-Further reading about phyloinformatics
-Blake, J. A., C. J. Bult, M. J. Donoghue, J. Humphries, and C. Fields. 1994. Interoperability of biological databases: a meeting report. Syst. Biol. 43:585-589.
-Donoghue, M. J. 1994. Progress and prospects in reconstructing plant phylogeny. Ann. Missouri Bot. Gard. 81:405-418.
-Donoghue, M. J. and D. D. Ackerly. 1996. Phylogenetic uncertainties and sensitivity analyses in comparative biology. Phil. Trans. R. Soc. London B, 351: 1241-1249.
-Maddison, W. P. and D. R. Maddison. 1992. MacClade: Interactive Analysis of Phylogeny and Character Evolution, Vers. 3.0. Sunderland, MA: Sinauer Assoc.
-Piel, W. H. 2003. "Phyloinformatics and Tree Networks." In: Wu, C. H., P. Wang, and J. T. L. Wang, eds. Computational Biology and Genome Informatics. World Scientific Press.
-Piel, W. H., M. J. Sanderson, and M. J. Donoghue. 2003. The Small-World Dynamics of Tree Networks and Data Mining in Phyloinformatics. Bioinformatics, 19(9): 1162-1168.
-Sanderson, M. J., B. G. Baldwin, G. Bharathan, C. S. Campbell, D. Ferguson, J. M. Porter, C. Von Dohlen, M. F. Wojciechowski and M. J. Donoghue. 1993. The growth of phylogenetic information and the need for a phylogenetic database. Syst. Biol. 42:562-568.
-Sanderson, M. J. and M. J. Donoghue. 1996. The relationship between homoplasy and confidence in a phylogenetic tree. In: Homoplasy and the Evolutionary Process (M. Sanderson and L. Hufford, eds.). San Diego: Academic Press.
-Shan, H., K. G. Herbert, W. H. Piel, D. Shasha and J. T. L. Wang. 2002. A Structure-Based Search Engine for Phylogenetic Databases. Proceedings of the 14th International Conference on Scientific and Statistical Database Management (SSDBM 2002), Edinburgh, Scotland, pp. 7-10.
-Swofford, D. L. 1993. PAUP: Phylogenetic Analysis Using Parsimony, Vers. 3.1.1. Washington, DC: Smithsonian Institution.
-Wang, J. T. L., H. Shan, D. Shasha, and W. H. Piel. 2003. TreeRank: A Similarity Measure for Nearest Neighbor Searching in Phylogenetic Databases. Proceedings of the 15th International Conference on Scientific and Statistical Database Management (SSDBM 2003), Cambridge, MA, pp. 171-180.
-Wang, J. T. L., H. Shan, D. Shasha and W. H. Piel. 2005. Fast Structural Search in Phylogenetic Databases . Evolutionary Bioinformatics Online, 1: 37-46.
+* Morell, V. 1996. TreeBASE: the roots of phylogeny. Science 273: 569.
+* Piel, W. H., M. J. Donoghue, and M. J. Sanderson. 2002. "TreeBASE: a database of phylogenetic knowledge." Pp. 41-47. In: Shimura, J., K. L. Wilson, and D. Gordon, eds. To the interoperable "Catalog of Life" with partners Species 2000 Asia Oceanea. Research Report from the National Institute for Environmental Studies No. 171, Tsukuba, Japan.
+* Sanderson, M. J., M. J. Donoghue, W. Piel, and T. Eriksson. 1994. TreeBASE: a prototype database of phylogenetic analyses and an interactive tool for browsing the phylogeny of life. American Journal of Botany, 81(6): 183.
+
+### Further reading about phyloinformatics
+
+* Blake, J. A., C. J. Bult, M. J. Donoghue, J. Humphries, and C. Fields. 1994. Interoperability of biological databases: a meeting report. Syst. Biol. 43:585-589.
+* Donoghue, M. J. 1994. Progress and prospects in reconstructing plant phylogeny. Ann. Missouri Bot. Gard. 81:405-418.
+* Donoghue, M. J. and D. D. Ackerly. 1996. Phylogenetic uncertainties and sensitivity analyses in comparative biology. Phil. Trans. R. Soc. London B, 351: 1241-1249.
+* Maddison, W. P. and D. R. Maddison. 1992. MacClade: Interactive Analysis of Phylogeny and Character Evolution, Vers. 3.0. Sunderland, MA: Sinauer Assoc.
+* Piel, W. H. 2003. "Phyloinformatics and Tree Networks." In: Wu, C. H., P. Wang, and J. T. L. Wang, eds. Computational Biology and Genome Informatics. World Scientific Press.
+* Piel, W. H., M. J. Sanderson, and M. J. Donoghue. 2003. The Small-World Dynamics of Tree Networks and Data Mining in Phyloinformatics. Bioinformatics, 19(9): 1162-1168.
+* Sanderson, M. J., B. G. Baldwin, G. Bharathan, C. S. Campbell, D. Ferguson, J. M. Porter, C. Von Dohlen, M. F. Wojciechowski and M. J. Donoghue. 1993. The growth of phylogenetic information and the need for a phylogenetic database. Syst. Biol. 42:562-568.
+* Sanderson, M. J. and M. J. Donoghue. 1996. The relationship between homoplasy and confidence in a phylogenetic tree. In: Homoplasy and the Evolutionary Process (M. Sanderson and L. Hufford, eds.). San Diego: Academic Press.
+* Shan, H., K. G. Herbert, W. H. Piel, D. Shasha and J. T. L. Wang. 2002. A Structure-Based Search Engine for Phylogenetic Databases. Proceedings of the 14th International Conference on Scientific and Statistical Database Management (SSDBM 2002), Edinburgh, Scotland, pp. 7-10.
+* Swofford, D. L. 1993. PAUP: Phylogenetic Analysis Using Parsimony, Vers. 3.1.1. Washington, DC: Smithsonian Institution.
+* Wang, J. T. L., H. Shan, D. Shasha, and W. H. Piel. 2003. TreeRank: A Similarity Measure for Nearest Neighbor Searching in Phylogenetic Databases. Proceedings of the 15th International Conference on Scientific and Statistical Database Management (SSDBM 2003), Cambridge, MA, pp. 171-180.
+* Wang, J. T. L., H. Shan, D. Shasha and W. H. Piel. 2005. Fast Structural Search in Phylogenetic Databases . Evolutionary Bioinformatics Online, 1: 37-46.

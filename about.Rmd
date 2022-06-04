@@ -6,28 +6,32 @@ output:
       in_header: GA_Script.html
 ---
 
-Background
+### Background
+
 TreeBASE is a relational database designed to manage and explore information on phylogenetic relationships (Sanderson et al., 1993, 1994; Piel et al., 1996; Morel, 1996; Piel et al., 2000). It includes phylogenetic trees and data matrices, together with information about the relevant publication, taxa, morphological and sequence-based characters, and published analyses.
 
 The database is designed to allow retrieval of trees and data from different studies so that existing phylogenetic results may be reassessed, compared, combined and reused. Applications include:
 
-to locate information on the phylogeny of particular groups of interest.
-to obtain datasets for studies of character evolution, including general patterns across many groups, such as patterns of homoplasy.
-in studies of biogeography -- to retrieve trees with representatives in particular geographical areas.
-in studies of coevolution -- to retrieve information on host and parasite phylogenies.
-in studies of congruence and combination of data -- to retrieve all molecular and morphological phylogenies for particular groups.
-in studies of phylogenetic methods -- to retrieve all parsimony or maximum likelihood reconstructions, for example, or to download datasets of various sorts to test methods.
-to link together trees of particular groups into more inclusive phylogenies.
-to discover understudied groups -- a resource for students, funding agencies, etc.
-to retrieve phylogenetic information for use in conservation biology and the management of natural resources.
-History, Funding, and Governance
+* to locate information on the phylogeny of particular groups of interest.
+* to obtain datasets for studies of character evolution, including general patterns across many groups, such as patterns of homoplasy.
+* in studies of biogeography -- to retrieve trees with representatives in particular geographical areas.
+* in studies of coevolution -- to retrieve information on host and parasite phylogenies.
+* in studies of congruence and combination of data -- to retrieve all molecular and morphological phylogenies for particular groups.
+* in studies of phylogenetic methods -- to retrieve all parsimony or maximum likelihood reconstructions, for example, or to download datasets of various sorts to test methods.
+* to link together trees of particular groups into more inclusive phylogenies.
+* to discover understudied groups -- a resource for students, funding agencies, etc.
+* to retrieve phylogenetic information for use in conservation biology and the management of natural resources.
+
+### History, Funding, and Governance
+
 The prototype for TreeBASE was first launched in 1994 (Sanderson et al. 1994, Piel et al., 2002) with funding from NSF SGER (NSF DEB 9318325: "A prototype database of phylogenetic studies"). The database underwent a complete redevelopment and redesign with funding from the Cyberinfrastructure for Phylogenetic Research project (NSF EF 0331654: "Building the Tree of Life -- A National Resource for Phyloinformatics and Computational Phylogenetics").
 
 TreeBASE was released in March 2010 as one of the main products of The Phyloinformatics Research Foundation, Inc., a Connecticut non-stock corporation. The Foundation provides direction, governance, and continuity for software, data sharing, and communication standards to promote phyloinformatic research for the scientific community.
 
 The current version of the database is 2.0 (released March 2010), and is hosted by Naturalis Biodiversity Center. In previous years the database has been hosted by the National Evolutionary Synthesis Center, the Yale Peabody Museum, the San Diego Supercomputer Center, the University at Buffalo, Harvard University, Leiden University, and the University of California, Davis.
 
-Related resources
-Encyclopedia of Life: A new project to create an online reference source and database for every one of the 1.8 million species that are named and known on this planet.
-Tree of Life Web Project: A collaborative effort of biologists and nature enthusiasts from around the world. On more than 10,000 World Wide Web pages, the project provides information about biodiversity, the characteristics of different groups of organisms, and their evolutionary history
-Mesquite: Experimental, modular software for evolutionary biology, designed to help biologists analyze comparative data about organisms in a phylogenetic context.
+### Related resources
+
+* Encyclopedia of Life: A new project to create an online reference source and database for every one of the 1.8 million species that are named and known on this planet.
+* Tree of Life Web Project: A collaborative effort of biologists and nature enthusiasts from around the world. On more than 10,000 World Wide Web pages, the project provides information about biodiversity, the characteristics of different groups of organisms, and their evolutionary history
+* Mesquite: Experimental, modular software for evolutionary biology, designed to help biologists analyze comparative data about organisms in a phylogenetic context.

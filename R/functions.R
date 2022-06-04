@@ -31,7 +31,13 @@ SaveEachTree <- function(trees) {
 	for(i in sequence(nrow(trees))) {
 		try(dir.create(paste0("trees/", trees$publishyear[i]), recursive=TRUE))
 		cat(trees$newickstring[i], file=paste0("trees/", trees$publishyear[i], "/tree_", trees$phylotree_id[i], ".phy"))
+		try(system(paste0("git add trees/", trees$publishyear[i], "/tree_", trees$phylotree_id[i], ".phy")))
+		try(system("git commit -m 'added tree' -a"))
+		if(i%%100) {
+			try(system("git push"))
+		}
 	}	
+	try(system("git push"))
 }
 
 SaveEachStudy <- function(trees) {
@@ -41,5 +47,11 @@ SaveEachStudy <- function(trees) {
 	for(i in sequence(length(unique_studies))) {
 		rmarkdown::render(input="study.Rmd", output_file=paste0("studies/study_", unique_studies[i] , ".html"), 
 		params=list(study_trees=trees[which(trees$study_id==unique_studies[i]),]))
-	}		
+		try(system(paste0("git add studies/study_", unique_studies[i] , ".html")))
+		try(system("git commit -m 'added study' -a"))
+		if(i%%100) {
+			try(system("git push"))
+		}
+	}	
+	try(system("git push"))	
 }
