@@ -19,7 +19,7 @@ params:
 
 Start typing above each column to filter for all taxa matching that. It will filter for the taxa and link out to the appropriate study page
 
-```{r, echo=FALSE, message=FALSE, warning=FALSE}
+```{r, echo=FALSE, message=FALSE, warning=FALSE, eval=FALSE}
 pretty_taxa_output <- function(output_table) {
 	output_table$taxa <- paste0("<a href='studies/study_",output_table$study_id, ".html'>", output_table$taxa, "</a>" )
 	DT::datatable(output_table$taxa,rownames=FALSE, filter="top", escape=FALSE)
