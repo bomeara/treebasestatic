@@ -16,7 +16,7 @@ TreeBASE was a repository of phylogenetic information, specifically user-submitt
 
 In spring 2022 it was taken offline due to a potential security issue after ~28 years of service. This is a simple page to restore some basic TreeBASE functionality so people can again access trees. It is not taking new trees; for that, go to [Open Tree of Life](https://tree.opentreeoflife.org/). Note that this site was stood up by [Brian O'Meara](https://www.brianomeara.info) and uses postgresql and R to convert the rich relational database behind TreeBASE into web pages and static files. For more information on original TreeBASE, see [references](references.html) and [about](about.html) pages. This site currently has just the trees, not the alignments. They are stored in folders for each publication year. There is also a gzipped file containing the information on the trees and studies at [trees.csv.gz](trees.csv.gz).
 
-Start typing above each column to filter for all taxa matching that. It will filter for the taxa and link out to the appropriate study page. You can also find trees based on terminal taxa [here](taxa.html), though that page may take some time to load.
+Start typing above each column to filter for all taxa matching that. It will filter for the taxa and link out to the appropriate study page. 
 
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
 pretty_tree_output <- function(output_table) {
