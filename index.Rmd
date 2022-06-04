@@ -24,7 +24,7 @@ Start typing above each column to filter for all taxa matching that. It will fil
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
 pretty_tree_output <- function(output_table) {
 	output_table_clean <- output_table %>% select(authors, papertitle, journal, publishyear, doi, study_id, phylotree_id) %>% group_by(authors, papertitle, journal, publishyear, doi, study_id) %>% summarise(ntrees=n())
-	output_table_clean$study_id <- paste0("<a href='../trees/tree_",output_table_clean$study_id, ".phy'>", "tree_",output_table_clean$study_id, ".phy</a>" )
+	output_table_clean$study_id <- paste0("<a href='studies/study_",output_table_clean$study_id, ".html'>", "study ",output_table_clean$study_id, "</a>" )
 
 	DT::datatable(output_table_clean,rownames=FALSE, filter="top", escape=FALSE)
 }
